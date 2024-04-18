@@ -1,0 +1,46 @@
+{
+	"info": {
+		"_postman_id": "ae5fe947-8e0e-4cf7-be36-e8f092983e68",
+		"name": "NamedEntityRecognition",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34371316"
+	},
+	"item": [
+		{
+			"name": "Extract Named Entity",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-RapidAPI-Key",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"text\": \"Apple is planning to open a new store in New York.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://namedentityrecognition.p.rapidapi.com/ner",
+					"protocol": "https",
+					"host": [
+						"namedentityrecognition",
+						"p",
+						"rapidapi",
+						"com"
+					],
+					"path": [
+						"ner"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
